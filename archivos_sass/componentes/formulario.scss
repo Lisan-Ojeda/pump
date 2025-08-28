@@ -1,0 +1,28 @@
+@use "../variables/mixins.scss" as *;
+
+/* Ajustes responsivos exactamente como tu CSS */
+@include between(calc(#{$bp-mobile} + 1px), $bp-tablet) {
+  .form-control,
+  .btn {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@include down($bp-mobile) {
+  .form-control,
+  .btn {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}

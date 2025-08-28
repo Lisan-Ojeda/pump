@@ -1,0 +1,25 @@
+
+
+
+@use "../variables/mixins.scss" as *;
+
+/* Grids / contenedores generales que definiste */
+.adultos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* OJO: mantengo el nombre tal como lo escribiste: "conteiner-fluit" */
+@include up($bp-desktop) {
+  .conteiner-fluit {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+main{
+    background-color: $color-primary;
+    
+}

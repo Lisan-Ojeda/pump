@@ -1,0 +1,28 @@
+@use "../variables/variables.scss" as *;
+@use "../variables/mixins.scss" as *;
+
+/* Logo */
+.nav-logo {
+  height: 50px;
+  width: auto;
+
+  @include down($bp-mobile) {
+    height: 40px;
+  }
+}
+
+/* Collapse de navbar solo en mobile */
+.navbar-collapse {
+  @include down($bp-mobile) {
+    background-color: $color-primary;
+    padding: 1rem;
+  }
+}
+
+/* Alineación del menú solo en tablet y mobile */
+@include between(calc(#{vars.$bp-mobile} + 1px), vars.$bp-tablet) {
+  .navbar-nav { text-align: center; }
+}
+@include down($bp-mobile) {
+  .navbar-nav { text-align: center; }
+}

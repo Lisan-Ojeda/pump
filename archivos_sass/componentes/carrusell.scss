@@ -1,0 +1,21 @@
+@use "../variables/variables.scss" as *;
+@use "../variables/mixins.scss" as *;
+
+/* Parte fija que pusiste fuera de media queries */
+#carouselExampleDark {
+  padding: 2rem;
+  background-color: $color-primary;
+}
+
+/* Parte que aplicás SOLO en >= 801px */
+@include up($bp-desktop) {
+  #carouselExampleDark {
+    max-width: 70%;
+    margin: 2rem auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}

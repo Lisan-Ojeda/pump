@@ -1,0 +1,34 @@
+@use "../variables/variables.scss" as *;
+@use "../variables/mixins.scss" as *;
+
+/* Override específico de Bootstrap .img-fluid sólo en mobile (tal cual tu CSS) */
+@include down($bp-mobile) {
+  .img-fluid { padding: 1rem; }
+}
+
+/* Overrides de utilidades Bootstrap en mobile/tablet (exactos a tu CSS) */
+@include between(calc(#{$bp-mobile} + 1px), $bp-tablet) {
+  .navbar-nav { text-align: center; } /* repetido aquí por fidelidad */
+  .form-control,
+  .btn {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@include down($bp-mobile) {
+  .navbar-nav { text-align: center; } /* repetido aquí por fidelidad */
+  .form-control,
+  .btn {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}

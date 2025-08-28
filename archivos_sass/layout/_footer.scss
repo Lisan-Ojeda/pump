@@ -1,0 +1,62 @@
+@use "../variables/variables.scss" as *;
+
+.footer-contenedor {
+  background-color: $color-dark;
+  color: $color-light;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-redes {
+  width: 45%;
+  margin: 2rem;
+}
+
+.footer-iconos {
+  display: flex;
+  margin-top: 10px;
+
+  img {
+    margin: 10px;
+    width: 4rem;
+    height: 4rem;
+    transition: transform 0.3s;
+
+    &:hover { transform: scale(1.5); }
+  }
+}
+
+.footer-formulario {
+  width: 45%;
+  /* En tu CSS original sólo seteás flex-direction, mantengo fielmente */
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+  margin: 1rem;
+
+  input,
+  textarea {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  button {
+    padding: 10px;
+    background-color: $color-light;
+    color: $color-dark;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $color-primary;
+      color: $color-light;
+    }
+  }
+}
