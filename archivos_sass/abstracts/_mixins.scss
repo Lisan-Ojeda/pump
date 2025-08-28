@@ -1,0 +1,28 @@
+@mixin flex-center($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin box-shadow($shadow) {
+  box-shadow: $shadow;
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+}
+
+@mixin responsive($min: null, $max: null) {
+  @if $min != null and $max != null {
+    @media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  } @else if $min != null {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else if $max != null {
+    @media (max-width: $max) {
+      @content;
+    }
+  }
+}

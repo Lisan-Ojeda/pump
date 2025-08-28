@@ -1,23 +1,10 @@
-/* 1) Abstracts (siempre primero) */
-@use "archivos_sass/variables/variables";
-@use "archivos_sass/variables/mixins";
 
-/* 2) Base */
-@use "archivos_sass/bases/bases";
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
 
-/* 3) Layout */
-@use "archivos_sass/layout/header";
-@use "archivos_sass/layout/footer";
-@use "archivos_sass/layout/grid";
-
-/* 4) Components */
-@use "archivos_sass/componentes/botones";
-@use "archivos_sass/componentes/cards";
-@use "archivos_sass/componentes/carrusell";
-@use "archivos_sass/componentes/formulario";
-
-/* 5) Pages */
-@use "archivos_sass/paginas/home";
-
-/* 6) Vendors (overrides de Bootstrap que definiste) */
-@use "archivos_sass/vendors/bootstrap";
+@use 'bases/bases';
+@use 'layout/header';
+@use 'layout/main';
+@use 'layout/footer';
+@use 'componentes/cards';
+@use 'componentes/formulario';

@@ -1,25 +1,23 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
-
-
-@use "../variables/mixins.scss" as *;
-
-/* Grids / contenedores generales que definiste */
-.adultos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.cont-text-index {
+  background-color: $color-cont-text;
+  border-radius: $border-radius;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  @include box-shadow($shadow-cont-text);
+  position: relative;
+  @include flex-center(column);
 }
 
-/* OJO: mantengo el nombre tal como lo escribiste: "conteiner-fluit" */
-@include up($bp-desktop) {
-  .conteiner-fluit {
-    display: flex;
-    justify-content: center;
-  }
+#carouselExampleDark {
+  padding: 2rem;
+  background-color: $color-primary;
+  @include flex-center(column);
 }
 
-
-main{
-    background-color: $color-primary;
-    
+.color-main {
+  background-color: $color-primary;
+  padding-top: 5rem;
 }

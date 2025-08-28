@@ -1,17 +1,148 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 2 | @use "archivos_sass/variables/variables";
- *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   archivos_sass\main.scss 2:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @use \"archivos_sass/variables/variables\";\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   archivos_sass\\main.scss 2:1  root stylesheet";
+html {
+  scroll-behavior: smooth;
 }
+
+body {
+  background-image: url(./img/equipo-de-gimnasio-en-3d.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-bg {
+  background-color: rgb(20, 71, 230);
+}
+
+.nav-logo {
+  height: 50px;
+  width: auto;
+}
+
+@media (max-width: 500px) {
+  .nav-logo {
+    height: 40px;
+  }
+  .navbar-collapse {
+    background-color: rgb(20, 71, 230);
+    padding: 1rem;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+}
+.cont-text-index {
+  background-color: rgb(189, 204, 249);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  box-shadow: 1px 9px 6px 2px rgba(2, 7, 23, 0.8);
+  -webkit-box-shadow: 1px 9px 6px 2px rgba(2, 7, 23, 0.8);
+  -moz-box-shadow: 1px 9px 6px 2px rgba(2, 7, 23, 0.8);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#carouselExampleDark {
+  padding: 2rem;
+  background-color: rgb(20, 71, 230);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-main {
+  background-color: rgb(20, 71, 230);
+  padding-top: 5rem;
+}
+
+.footer-contenedor {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-redes {
+  width: 45%;
+  margin: 2rem;
+}
+
+.footer-iconos {
+  display: flex;
+  margin-top: 10px;
+}
+.footer-iconos img {
+  margin: 10px;
+  width: 4rem;
+  height: 4rem;
+  transition: transform 0.3s;
+}
+.footer-iconos img:hover {
+  transform: scale(1.5);
+}
+
+.footer-formulario {
+  width: 45%;
+  flex-direction: column;
+}
+.footer-formulario input,
+.footer-formulario textarea {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.footer-formulario button {
+  padding: 10px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer-formulario button:hover {
+  background-color: rgb(20, 71, 230);
+  color: white;
+}
+
+.titulos {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.grupo-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+.grupo-cards .card {
+  width: 18rem;
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.adultos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,15 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(./img/equipo-de-gimnasio-en-3d.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $color-bg-body;
+  display: flex;
+    flex-direction: column;}

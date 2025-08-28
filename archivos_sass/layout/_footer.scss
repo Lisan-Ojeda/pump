@@ -1,8 +1,9 @@
-@use "../variables/variables.scss" as *;
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
 .footer-contenedor {
-  background-color: $color-dark;
-  color: $color-light;
+  background-color: $color-footer-bg;
+  color: $color-footer-text;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -23,17 +24,15 @@
     height: 4rem;
     transition: transform 0.3s;
 
-    &:hover { transform: scale(1.5); }
+    &:hover {
+      transform: scale(1.5);
+    }
   }
 }
 
 .footer-formulario {
   width: 45%;
-  /* En tu CSS original sólo seteás flex-direction, mantengo fielmente */
-  flex-direction: column;
-  gap: 10px;
-  padding: 1rem;
-  margin: 1rem;
+  flex-direction:column;
 
   input,
   textarea {
@@ -46,8 +45,8 @@
 
   button {
     padding: 10px;
-    background-color: $color-light;
-    color: $color-dark;
+    background-color: white;
+    color: black;
     font-weight: bold;
     border: none;
     border-radius: 5px;
@@ -56,7 +55,13 @@
 
     &:hover {
       background-color: $color-primary;
-      color: $color-light;
+      color: white;
     }
   }
+}
+
+.titulos {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
 }

@@ -1,28 +1,26 @@
-@use "../variables/variables.scss" as *;
-@use "../variables/mixins.scss" as *;
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
-/* Logo */
-.nav-logo {
-  height: 50px;
-  width: auto;
-
-  @include down($bp-mobile) {
-    height: 40px;
-  }
+.custom-bg {
+  background-color: $color-primary;
 }
 
-/* Collapse de navbar solo en mobile */
-.navbar-collapse {
-  @include down($bp-mobile) {
+.nav-logo {
+  height: $nav-logo-height;
+  width: auto;
+}
+
+@include responsive($max: 500px) {
+  .nav-logo {
+    height: $nav-logo-height-mobile;
+  }
+
+  .navbar-collapse {
     background-color: $color-primary;
     padding: 1rem;
   }
-}
 
-/* Alineación del menú solo en tablet y mobile */
-@include between(calc(#{vars.$bp-mobile} + 1px), vars.$bp-tablet) {
-  .navbar-nav { text-align: center; }
-}
-@include down($bp-mobile) {
-  .navbar-nav { text-align: center; }
+  .navbar-nav {
+    text-align: center;
+  }
 }
