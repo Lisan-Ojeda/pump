@@ -1,1 +1,11 @@
 @use "../abstracts/mixins.scss" as *;
+@use "../abstracts/variables.scss" as *;
+
+.footer-form {
+  display: block; // Mobile first
+
+  @include responsive(801px) {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }}
