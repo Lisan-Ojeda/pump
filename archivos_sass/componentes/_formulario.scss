@@ -3,9 +3,12 @@
 
 .footer-form {
   display: block; // Mobile first
+}
 
-  @include responsive(801px) {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-  }}
+ @include responsive($min:801px) {
+    .footer-form{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+        gap: 1rem;}
+  }

@@ -46,6 +46,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 65%;
 }
 
 #carouselExampleDark {
@@ -62,7 +63,7 @@ body {
   padding-top: 5rem;
 }
 
-.img-fluid-mov {
+#img-fluid-mov {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,6 +130,18 @@ body {
   padding: 0.5rem;
 }
 
+#footer-form {
+  display: block;
+}
+
+@media (min-width: 801px) {
+  #footer-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
 .grupo-cards {
   display: flex;
   flex-wrap: wrap;
@@ -155,14 +168,15 @@ body {
 .footer-form {
   display: block;
 }
+
 @media (min-width: 801px) {
   .footer-form {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 1rem;
   }
 }
-
 /* Parte fija que pusiste fuera de media queries */
 #carouselExampleDark {
   padding: 2rem;
@@ -177,7 +191,6 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

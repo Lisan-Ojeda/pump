@@ -9,6 +9,7 @@
   @include box-shadow($shadow-cont-text);
   position: relative;
   @include flex-center(column);
+  width: 65%;
 }
 
 #carouselExampleDark {
@@ -22,7 +23,7 @@
   padding-top: 5rem;
 }
 
-.img-fluid-mov{
+#img-fluid-mov{
   display: flex;
   justify-content: center;
   align-items: center;
