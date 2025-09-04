@@ -62,6 +62,13 @@ body {
   padding-top: 5rem;
 }
 
+.img-fluid-mov {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
 .footer-contenedor {
   background-color: #000;
   color: #fff;
@@ -160,7 +167,6 @@ body {
 #carouselExampleDark {
   padding: 2rem;
   background-color: rgb(20, 71, 230);
-  color: #fff;
 }
 
 #carouselExampleDark {
