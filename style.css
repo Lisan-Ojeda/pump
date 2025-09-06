@@ -70,6 +70,12 @@ body {
   padding-top: 2rem;
 }
 
+#conocer-index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .footer-contenedor {
   background-color: #000;
   color: #fff;
@@ -137,9 +143,11 @@ body {
 @media (min-width: 801px) {
   #footer-form {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.5rem;
+    width: 70%;
+    height: 70%;
   }
 }
 .grupo-cards {
@@ -165,18 +173,6 @@ body {
   flex-wrap: wrap;
 }
 
-.footer-form {
-  display: block;
-}
-
-@media (min-width: 801px) {
-  .footer-form {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-}
 /* Parte fija que pusiste fuera de media queries */
 #carouselExampleDark {
   padding: 2rem;
